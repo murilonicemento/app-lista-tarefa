@@ -20,6 +20,12 @@
 		</div>
 	</nav>
 
+	<? if (isset($_GET["inclusao"]) && $_GET["inclusao"] == 1) { ?>
+		<div class="bg-success pt-2 text-white d-flex justify-content-center">
+			<h5>Tarefa inserida com sucesso!</h5>
+		</div>
+	<? } ?>
+
 	<div class="container app">
 		<div class="row">
 			<div class="col-md-3 menu">
@@ -37,10 +43,10 @@
 							<h4>Nova tarefa</h4>
 							<hr />
 
-							<form>
+							<form action="./tarefa_controller.php?acao=inserir" method="post">
 								<div class="form-group">
 									<label>Descrição da tarefa:</label>
-									<input type="text" class="form-control" placeholder="Exemplo: Lavar o carro">
+									<input type="text" name="tarefa" class="form-control" placeholder="Exemplo: Lavar o carro">
 								</div>
 
 								<button class="btn btn-success">Cadastrar</button>
