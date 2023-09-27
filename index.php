@@ -2,7 +2,6 @@
 
 $acao = "recuperarTarefasPendentes";
 require("./tarefa_controller.php");
-
 ?>
 
 <html>
