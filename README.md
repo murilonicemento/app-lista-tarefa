@@ -2,7 +2,7 @@
 
 Este é um aplicativo simples de lista de tarefas desenvolvido em PHP e utilizando um banco de dados MySQL para armazenar as tarefas. Ele permite que os usuários criem, visualizem, atualizem e excluam tarefas em uma interface amigável.
 
-## Video
+## Vídeo
 
 <video width="320" height="240" controls>
   <source src="./.github/project.mp4" type="video/mp4">
