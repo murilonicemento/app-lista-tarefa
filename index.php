@@ -87,7 +87,7 @@ require("./tarefa_controller.php");
 							<h4>Tarefas pendentes</h4>
 							<hr />
 
-							<? foreach ($tarefas as $indice => $tarefa) { ?>
+							<?php foreach ($tarefas as $indice => $tarefa) { ?>
 								<div class="row mb-3 d-flex align-items-center tarefa">
 									<div class="col-sm-9" id="tarefa_<?= $tarefa->id ?>"><?= $tarefa->tarefa ?></div>
 									<div class="col-sm-3 mt-2 d-flex justify-content-between">
@@ -96,7 +96,7 @@ require("./tarefa_controller.php");
 										<i class="fas fa-check-square fa-lg text-success" onclick="marcarRealizada(<?= $tarefa->id ?>)"></i>
 									</div>
 								</div>
-							<? } ?>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
